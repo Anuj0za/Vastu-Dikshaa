@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+
+
+    <head>
+        <title>Vastu dikshaa</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico.jpg">
+    </head>
+    
+    <!-- this line for favicon  -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vastu dikshaa</title>
+    <meta name="description"
+        content="Book a personal consultation with Seema Gahlot for Kundli reading, Vastu consultation and Career astrology. Trusted by hundreds of clients across India." />
+    <meta name="keywords"
+        content="astrologer, vastu consultant, kundli reading, career astrology, marriage compatibility, vedic astrology India" />
+    <meta property="og:title" content="Seema Gahlot | Vedic Astrologer & Vastu Consultant" />
+    <meta property="og:description" content="Professional Astrology and Vastu Consultation for a Better Life." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #C9A84C;
+            --gold-light: #E8D5A3;
+            --gold-pale: #FAF3E0;
+            --beige: #FAF8F5;
+            --beige-dark: #F2EDE6;
+            --black: #1a1a1a;
+            --muted: #6B6B6B;
+            --border: #E8E4DD;
+            --insta-gradient: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: var(--black);
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #fff; }
+        ::-webkit-scrollbar-thumb { background: var(--gold); }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(32px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes shimmer {
+            0%, 100% { opacity: .6; }
+            50% { opacity: 1; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: .8; }
+            100% { transform: scale(1.6); opacity: 0; }
+        }
+        @keyframes marqueeScroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        .fade-up { opacity: 0; }
+        .fade-up.visible { animation: fadeUp 0.9s cubic-bezier(.22,1,.36,1) forwards; }
+        .d1 { animation-delay: .1s; }
+        .d2 { animation-delay: .2s; }
+        .d3 { animation-delay: .3s; }
+        .d4 { animation-delay: .4s; }
+
+        /* ── NAVBAR ── */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 999;
+            height: 72px;
+            padding: 0 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.4s ease;
+        }
+        nav.scrolled {
+            background: rgba(255,255,255,.96);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            box-shadow: 0 4px 24px rgba(0,0,0,.04);
+        }
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--black);
+            text-decoration: none;
+            letter-spacing: .02em;
+        }
+        .nav-logo span { color: var(--gold); }
+        .nav-links {
+            display: flex;
+            gap: 36px;
+            align-items: center;
+        }
+        .nav-links a {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--black);
+            text-decoration: none;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            transition: color .2s;
+        }
+        .nav-links a:hover { color: var(--gold); }
+        .nav-cta {
+            background: var(--gold) !important;
+            color: #fff !important;
+            padding: 10px 22px !important;
+            letter-spacing: .08em !important;
+            transition: all .3s !important;
+        }
+        .nav-cta:hover { background: #b8943e !important; transform: translateY(-1px); }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        .hamburger span {
+            width: 24px;
+            height: 1.5px;
+            background: var(--black);
+            transition: all .3s;
+            display: block;
+        }
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 72px; left: 0; right: 0;
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            padding: 24px 32px;
+            z-index: 998;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .mobile-menu a {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--black);
+            text-decoration: none;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+        }
+
+        /* ── BUTTONS ── */
+        .btn-gold {
+            background: var(--gold);
+            color: #fff;
+            padding: 14px 36px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .3s ease;
+        }
+        .btn-gold:hover {
+            background: #b8943e;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(201,168,76,.3);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--black);
+            padding: 13px 35px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            border: 1px solid var(--black);
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .3s ease;
+        }
+        .btn-outline:hover { background: var(--black); color: #fff; }
+        .btn-wa {
+            background: #25D366;
+            color: #fff;
+            padding: 14px 36px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all .3s ease;
+        }
+        .btn-wa:hover {
+            background: #1ebe5d;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(37,211,102,.3);
+        }
+        .btn-insta {
+            background: var(--insta-gradient);
+            color: #fff;
+            padding: 14px 36px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all .3s ease;
+        }
+        .btn-insta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(220,39,67,.35);
+            opacity: .92;
+        }
+
+        /* ── SECTIONS ── */
+        section { padding: 120px 60px; }
+        .max { max-width: 1200px; margin: 0 auto; }
+
+        .label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: .22em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 14px;
+            display: block;
+        }
+        .h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px,4vw,52px);
+            font-weight: 400;
+            color: var(--black);
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+        .sub {
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--muted);
+            line-height: 1.9;
+        }
+        .gold-line {
+            width: 48px;
+            height: 2px;
+            background: var(--gold);
+            margin: 18px 0 40px;
+        }
+        .gold-line.c { margin: 18px auto 40px; }
+        .tc { text-align: center; }
+        .tc .sub { max-width: 560px; margin: 0 auto; }
+
+        /* ── HERO ── */
+        #hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #FAF8F5 0%, #F5EFE4 40%, #FAF8F5 100%);
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg-text {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(120px,18vw,240px);
+            font-weight: 700;
+            color: rgba(201,168,76,.05);
+            white-space: nowrap;
+            pointer-events: none;
+            user-select: none;
+            z-index: 0;
+            animation: shimmer 6s ease infinite;
+        }
+        .hero-ring {
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid rgba(201,168,76,.1);
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+            pointer-events: none;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            padding: 120px 0 80px;
+            width: 100%;
+        }
+        .hero-eyebrow {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: .25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .hero-eyebrow::before {
+            content: '';
+            width: 32px;
+            height: 1px;
+            background: var(--gold);
+        }
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(44px,6vw,80px);
+            font-weight: 400;
+            line-height: 1.08;
+            color: var(--black);
+            margin-bottom: 24px;
+            letter-spacing: -.02em;
+        }
+       
+         .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(44px,6vw,80px);
+            font-weight: 400;
+            line-height: 1.08;
+            color: var(--black);
+            margin-bottom: 24px;
+            letter-spacing: -.02em;
+        }
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        .hero-title em { font-style: italic; color: var(--gold); }
+        
+
+        
+        
+        
+        .hero-subtitle {
+            font-size: 17px;
+            font-weight: 300;
+            color: var(--muted);
+            line-height: 1.9;
+            margin-bottom: 44px;
+        }
+        .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+        .hero-stats {
+            display: flex;
+            gap: 48px;
+            margin-top: 56px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+        .stat-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            font-weight: 600;
+            color: var(--black);
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 11px;
+            color: var(--muted);
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+        .hero-photo-wrap { position: relative; }
+        .hero-photo-border {
+            position: absolute;
+            top: 24px; left: 24px; right: -24px; bottom: -24px;
+            border: px solid var(--gold-light);
+            z-index: 0;
+        }
+        .hero-photo {
+            position: relative;
+            z-index: 1;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+        }
+        .hero-photo img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+            transition: transform .6s ease;
+        }
+        .hero-photo:hover img { transform: scale(1.03); }
+        .hero-name-tag {
+            position: absolute;
+            bottom: 32px; left: -28px;
+            z-index: 2;
+            background: #fff;
+            padding: 18px 24px;
+            border-left: 3px solid var(--gold);
+            box-shadow: 0 12px 40px rgba(0,0,0,.1);
+        }
+        .hero-name-tag h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--black);
+        }
+        .hero-name-tag p {
+            font-size: 11px;
+            color: var(--gold);
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            margin-top: 3px;
+        }
+        .hero-badge {
+            position: absolute;
+            top: 32px; right: -16px;
+            z-index: 2;
+            background: var(--gold);
+            color: #fff;
+            padding: 12px 16px;
+            text-align: center;
+            animation: float 4s ease infinite;
+        }
+        .hero-badge strong {
+            display: block;
+            font-size: 22px;
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-badge span { font-size: 9px; letter-spacing: .15em; text-transform: uppercase; }
+
+        /* ── MARQUEE ── */
+        .marquee-section {
+            background: var(--black);
+            padding: 22px 0;
+            overflow: hidden;
+        }
+        .marquee-track {
+            display: flex;
+            gap: 0;
+            white-space: nowrap;
+            animation: marqueeScroll 20s linear infinite;
+        }
+        .marquee-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 16px;
+            padding: 0 40px;
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(255,255,255,.5);
+            letter-spacing: .2em;
+            text-transform: uppercase;
+        }
+        .marquee-dot {
+            width: 4px; height: 4px;
+            border-radius: 50%;
+            background: var(--gold);
+            flex-shrink: 0;
+        }
+
+        /* ── SERVICES ── */
+        #services { background: #fff; }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+        }
+        .service-card {
+            background: #fff;
+            padding: 52px 40px;
+            transition: all .35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            transform: scaleX(0);
+            transition: transform .4s ease;
+            transform-origin: left;
+        }
+        .service-card:hover {
+            background: var(--beige);
+            transform: translateY(-6px);
+            box-shadow: 0 32px 64px rgba(0,0,0,.08);
+            z-index: 1;
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            font-weight: 700;
+            color: rgba(201,168,76,.12);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 400;
+            color: var(--black);
+            margin-bottom: 14px;
+        }
+        .service-card p {
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--muted);
+            line-height: 1.9;
+        }
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 28px;
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--gold);
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: gap .3s;
+        }
+        .service-link:hover { gap: 14px; }
+
+        /* ── PROCESS ── */
+        #process { background: var(--beige); }
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+            gap: 40px;
+        }
+        .process-step { text-align: center; padding: 40px 24px; }
+        .process-circle {
+            width: 80px; height: 80px;
+            border-radius: 50%;
+            border: 1px solid var(--gold-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 28px;
+            transition: all .3s;
+        }
+        .process-step:hover .process-circle { background: var(--gold); border-color: var(--gold); }
+        .process-circle span {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 600;
+            color: var(--gold);
+            transition: color .3s;
+        }
+        .process-step:hover .process-circle span { color: #fff; }
+        .process-step h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--black);
+            margin-bottom: 10px;
+        }
+        .process-step p {
+            font-size: 13px;
+            font-weight: 300;
+            color: var(--muted);
+            line-height: 1.8;
+        }
+
+        /* ── ABOUT ── */
+        #about { background: #fff; }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            align-items: center;
+        }
+        .about-img-wrap { position: relative; }
+        .about-img-border {
+            position: absolute;
+            top: 20px; left: 20px; right: -20px; bottom: -20px;
+            border: 1px solid var(--gold-light);
+            z-index: 0;
+        }
+        .about-img {
+            position: relative;
+            z-index: 1;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+        }
+        .about-img img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            object-position: top;
+            display: block;
+        }
+        .about-img-placeholder {
+            width: 100%; height: 100%;
+            background: var(--beige-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            color: var(--muted);
+            aspect-ratio: 4/5;
+        }
+        .about-quote {
+            background: var(--beige);
+            border-left: 3px solid var(--gold);
+            padding: 24px 28px;
+            margin: 32px 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-style: italic;
+            color: var(--black);
+            line-height: 1.7;
+        }
+        .credential {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .cred-dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--gold);
+            flex-shrink: 0;
+            margin-top: 6px;
+        }
+        .credential span {
+            font-size: 14px;
+            color: var(--muted);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        /* ── TESTIMONIALS ── */
+        #testimonials { background: var(--beige); }
+        .tgrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            gap: 28px;
+        }
+        .tcard {
+            background: #fff;
+            padding: 40px 36px;
+            border: 1px solid var(--border);
+            transition: all .3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .tcard::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            transform: scaleX(0);
+            transition: transform .4s;
+            transform-origin: left;
+        }
+        .tcard:hover { box-shadow: 0 20px 48px rgba(0,0,0,.07); transform: translateY(-4px); }
+        .tcard:hover::after { transform: scaleX(1); }
+        .tquote {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            color: var(--gold-light);
+            line-height: .8;
+            margin-bottom: 16px;
+        }
+        .tstars { color: var(--gold); font-size: 13px; letter-spacing: 3px; margin-bottom: 16px; }
+        .ttext {
+            font-size: 15px;
+            font-weight: 300;
+            color: var(--black);
+            line-height: 1.95;
+            font-style: italic;
+            margin-bottom: 28px;
+        }
+        .tname {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--black);
+            letter-spacing: .06em;
+            text-transform: uppercase;
+        }
+        .tcity { font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+        /* ── GALLERY ── */
+        #gallery { background: #fff; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 12px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 1;
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform .5s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26,26,26,.6), transparent);
+            opacity: 0;
+            transition: opacity .3s;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-overlay span {
+            font-size: 12px;
+            color: #fff;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .gallery-placeholder {
+            width: 100%; height: 100%;
+            background: var(--beige-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            transition: transform .5s ease;
+        }
+        .gallery-item:hover .gallery-placeholder { transform: scale(1.05); }
+
+        /* ── CERTIFICATIONS ── */
+        #certifications { background: var(--beige); }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        .cert-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            padding: 32px 24px;
+            text-align: center;
+            transition: all .3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .cert-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            transform: scaleX(0);
+            transition: transform .4s;
+            transform-origin: left;
+        }
+        .cert-card:hover {
+            box-shadow: 0 16px 40px rgba(0,0,0,.08);
+            transform: translateY(-4px);
+            border-color: var(--gold-light);
+        }
+        .cert-card:hover::before { transform: scaleX(1); }
+        .cert-img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 16px;
+        }
+        .cert-img-placeholder {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: var(--beige-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+        .cert-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: var(--black);
+            margin-bottom: 6px;
+        }
+        .cert-card p { font-size: 12px; color: var(--muted); font-weight: 300; }
+        .cert-badge {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 10px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--gold);
+            border: 1px solid var(--gold-light);
+            padding: 4px 12px;
+        }
+
+        /* ── BOOKING ── */
+        #booking { background: #fff; }
+        .booking-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+        .booking-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .booking-icon {
+            width: 44px; height: 44px;
+            border: 1px solid var(--gold-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        .booking-info-item h4 { font-size: 14px; font-weight: 500; color: var(--black); margin-bottom: 4px; }
+        .booking-info-item p { font-size: 13px; color: var(--muted); font-weight: 300; line-height: 1.7; }
+        .booking-tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 32px;
+        }
+        .btab {
+            padding: 12px 22px;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            color: var(--muted);
+            transition: all .2s;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+            font-family: 'Inter', sans-serif;
+        }
+        .btab.active { color: var(--gold); border-bottom-color: var(--gold); }
+        .bpanel { display: none; }
+        .bpanel.active { display: block; }
+        .form-group { margin-bottom: 18px; }
+        .form-group label {
+            display: block;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--border);
+            background: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--black);
+            outline: none;
+            transition: border-color .2s;
+            -webkit-appearance: none;
+            border-radius: 0;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus { border-color: var(--gold); }
+        .form-group textarea { resize: vertical; min-height: 100px; }
+        .wa-panel-box {
+            background: var(--beige);
+            padding: 48px 36px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+        .wa-panel-box p {
+            font-size: 15px;
+            color: var(--muted);
+            font-weight: 300;
+            line-height: 1.9;
+            margin-bottom: 32px;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: var(--black);
+            color: #fff;
+            padding: 72px 60px 40px;
+        }
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 64px;
+            margin-bottom: 56px;
+        }
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+        .footer-logo span { color: var(--gold); }
+        .footer-desc {
+            font-size: 13px;
+            color: #666;
+            font-weight: 300;
+            line-height: 1.9;
+            margin-bottom: 28px;
+        }
+        .footer-social { display: flex; gap: 12px; }
+        .social-btn {
+            width: 38px; height: 38px;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all .3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .social-btn:hover { border-color: var(--gold); color: var(--gold); }
+        /* Instagram social button special hover */
+        .social-btn.insta:hover {
+            border-color: transparent;
+            color: #fff;
+            background: var(--insta-gradient);
+        }
+        .footer-col h4 {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+        .footer-col a {
+            display: block;
+            font-size: 13px;
+            color: #666;
+            text-decoration: none;
+            font-weight: 300;
+            margin-bottom: 10px;
+            transition: color .2s;
+        }
+        .footer-col a:hover { color: var(--gold); }
+        .footer-bottom {
+            border-top: 1px solid #222;
+            padding-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .footer-bottom p { font-size: 12px; color: #444; font-weight: 300; }
+        .footer-bottom span { color: var(--gold); }
+
+        /* ── WhatsApp Float ── */
+        .wa-float {
+            position: fixed;
+            bottom: 32px; right: 32px;
+            width: 58px; height: 58px;
+            border-radius: 50%;
+            background: #25D366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 24px rgba(37,211,102,.45);
+            z-index: 1000;
+            text-decoration: none;
+            transition: all .3s;
+        }
+        .wa-float:hover {
+            transform: scale(1.12);
+            box-shadow: 0 8px 32px rgba(37,211,102,.55);
+        }
+        .wa-float svg { width: 26px; height: 26px; fill: #fff; }
+        .wa-pulse {
+            position: absolute;
+            width: 100%; height: 100%;
+            border-radius: 50%;
+            background: rgba(37,211,102,.4);
+            animation: pulse 2s ease infinite;
+        }
+
+        /* ── Instagram Float ── */
+        .insta-float {
+            position: fixed;
+            bottom: 104px; right: 32px;
+            width: 58px; height: 58px;
+            border-radius: 50%;
+            background: var(--insta-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 24px rgba(220,39,67,.4);
+            z-index: 1000;
+            text-decoration: none;
+            transition: all .3s;
+        }
+        .insta-float:hover {
+            transform: scale(1.12);
+            box-shadow: 0 8px 32px rgba(220,39,67,.5);
+        }
+        .insta-float svg { width: 24px; height: 24px; fill: #fff; }
+
+        /* ── Responsive ── */
+        @media(max-width:900px) {
+            nav { padding: 0 24px; }
+            section { padding: 80px 24px; }
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .hero-grid { grid-template-columns: 1fr; gap: 48px; padding: 120px 0 60px; }
+            .hero-photo-border { display: none; }
+            .hero-badge { right: 0; }
+            .about-grid { grid-template-columns: 1fr; gap: 48px; }
+            .about-img-border { display: none; }
+            .booking-grid { grid-template-columns: 1fr; gap: 48px; }
+            .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
+            .gallery-grid { grid-template-columns: repeat(2,1fr); }
+            .cert-grid { grid-template-columns: repeat(2,1fr); }
+        }
+        @media(max-width:600px) {
+            .hero-title { font-size: 40px; }
+            .gallery-grid { grid-template-columns: repeat(2,1fr); gap: 8px; }
+            .cert-grid { grid-template-columns: repeat(2,1fr); }
+            .footer-top { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; }
+            .process-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <a href="#hero" class="nav-logo">Acharya <span>Seema Gahlot</span></a>
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#booking">Contact</a>
+            <a href="#booking" class="nav-cta">Book Now</a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#services" onclick="closeMenu()">Services</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#gallery" onclick="closeMenu()">Gallery</a>
+        <a href="#testimonials" onclick="closeMenu()">Reviews</a>
+        <a href="#booking" onclick="closeMenu()">Book Now</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg-text">JYOTISH</div>
+        <div class="hero-ring" style="width:800px;height:800px;"></div>
+        <div class="hero-ring" style="width:560px;height:560px;"></div>
+        <div class="hero-ring" style="width:320px;height:320px;"></div>
+
+        <div class="hero-grid">
+            <div>
+                <div class="hero-eyebrow fade-up">Vedic Astrology · Vastu · Career Guidance</div>
+                <h1 class="hero-title fade-up d1">
+                    Find Clarity.<br><em>Find Direction.</em>
+                </h1>
+
+
+<!-- 
+                <h1 class="hero-title fade-up d">
+                    Vastudikshaa.<br><em>by Seemaa gahlot</em>
+                </h1>
+                 -->
+               
+               
+               
+               
+                <p class="hero-subtitle fade-up d2">
+                    Professional Astrology and Vastu Consultation <br> Vastudikshaa by Seema Gahlot
+                </p>
+
+              
+               
+               
+               
+                <div class="hero-btns fade-up d3">
+                    <a href="#booking" class="btn-gold">Book a Consultation</a>
+                    <a href="https://wa.me/919910791267?text=Hello%20Seema%20ji%2C%20I%20would%20like%20to%20book%20a%20consultation."
+                        class="btn-wa" target="_blank">
+                        <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        WhatsApp Now
+                    </a>
+                    <a href="https://www.instagram.com/seemaa_gahlot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        class="btn-insta" target="_blank">
+                        <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        Instagram
+                    </a>
+                </div>
+                <div class="hero-stats fade-up d4">
+                    <div>
+                        <div class="stat-num">500+</div>
+                        <div class="stat-label">Consultations</div>
+                    </div>
+                    <div>
+                        <div class="stat-num">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="stat-num">98%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Photo big photo on right with gold frame -->
+            <div class="hero-photo-wrap fade-up d2">
+                <div class="hero-photo-border"></div>
+                <div class="hero-badge">
+                    <strong>✦</strong>
+                    <span>Certified</span>
+                </div>
+                <div class="hero-photo">
+                    <img src="5.jpg" alt="Seema Gahlot - Vedic Astrologer & Vastu Consultant"
+                        onerror="this.parentElement.innerHTML='<div style=\'width:100%;height:100%;background:#F2EDE6;display:flex;align-items:center;justify-content:center;font-family:Playfair Display,serif;font-size:18px;color:#6B6B6B;min-height:500px;\'>Add main image with frame .jpg to folder</div>'" />
+                </div>
+                <div class="hero-name-tag">
+                    <h3>Acharya Seema Gahlot</h3>
+                    <p>Vedic Astrologer & Vastu Expert</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <span class="marquee-item"><span class="marquee-dot"></span>Vedic Astrology</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Vastu Shastra</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Kundli Reading</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Career Guidance</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Marriage Compatibility</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Birth Chart Analysis</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Vastu Correction</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Life Path Reading</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Vedic Astrology</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Vastu Shastra</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Kundli Reading</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Career Guidance</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Marriage Compatibility</span>
+            <span class="marquee-item"><span class="marquee-dot"></span>Vastu Correction</span>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="max">
+            <div class="tc fade-up">
+                <span class="label">What I Offer</span>
+                <h2 class="h2">Services</h2>
+                <div class="gold-line c"></div>
+                <p class="sub">Each consultation is deeply personal, crafted to bring clarity to your unique journey.</p>
+            </div>
+            <div style="height:56px;"></div>
+            <div class="services-grid fade-up d2">
+                <div class="service-card">
+                    <div class="service-num">01</div>
+                    <h3>Astrology Consultation</h3>
+                    <p>A detailed reading of your birth chart revealing your life path, personality, strengths, and the timing of key life events using ancient Vedic wisdom.</p>
+                    <a href="#booking" class="service-link">Book Session →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-num">02</div>
+                    <h3>Vastu Guidance</h3>
+                    <p>Align your home or office with positive energies. Transform your space to attract prosperity, peace, and positive relationships through Vastu Shastra.</p>
+                    <a href="#booking" class="service-link">Book Session →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-num">03</div>
+                    <h3>Marriage Compatibility</h3>
+                    <p>In-depth Kundli matching and compatibility analysis to ensure a blessed union. Understand your relationship at a deeper level.</p>
+                    <a href="#booking" class="service-link">Book Session →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-num">04</div>
+                    <h3>Career Guidance</h3>
+                    <p>Discover the right career path, the best timing for major decisions, and how to navigate professional challenges using the power of your birth chart.</p>
+                    <a href="#booking" class="service-link">Book Session →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+        <div class="max">
+            <div class="tc fade-up">
+                <span class="label">How It Works</span>
+                <h2 class="h2">Your Journey to Clarity</h2>
+                <div class="gold-line c"></div>
+            </div>
+            <div style="height:48px;"></div>
+            <div class="process-grid fade-up d2">
+                <div class="process-step">
+                    <div class="process-circle"><span>1</span></div>
+                    <h4>Book a Session</h4>
+                    <p>Choose your service and pick a time that works for you via our online scheduler.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-circle"><span>2</span></div>
+                    <h4>Share Your Details</h4>
+                    <p>Provide your birth date, time, and place so Seema can prepare your personalised reading.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-circle"><span>3</span></div>
+                    <h4>Receive Guidance</h4>
+                    <p>Have your consultation online or in person and receive deep, actionable insights.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-circle"><span>4</span></div>
+                    <h4>Transform Your Life</h4>
+                    <p>Apply the wisdom to your decisions and experience real positive change.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="max">
+            <div class="about-grid">
+                <div class="about-img-wrap fade-up">
+                    <div class="about-img-border"></div>
+                    <div class="about-img">
+                        <img src="about.jpeg " alt="Seema Gahlot"
+                            onerror="this.outerHTML='<div class=\'about-img-placeholder\'>Add about.jpeg </div>'" />
+                    </div>
+                </div>
+                <div class="fade-up d2">
+                    <span class="label">About</span>
+                    <h2 class="h2">Acharya Seema Gahlot</h2>
+                    <div class="gold-line"></div>
+                    <p class="sub" style="max-width:100%;">With over 5 years of experience in Vedic Astrology and Vastu Shastra, I have guided hundreds of individuals and families towards clarity, peace, and purpose.</p>
+                    <div class="about-quote">"Astrology is not about fate — it is about understanding yourself deeply enough to create your own destiny."</div>
+                    <div class="credential">
+                        <div class="cred-dot"></div><span>Certified Vedic Astrologer with 5+ years of dedicated practice</span>
+                    </div>
+                    <div class="credential">
+                        <div class="cred-dot"></div><span>Expert in Vastu Shastra for homes and commercial spaces</span>
+                    </div>
+                    <div class="credential">
+                        <div class="cred-dot"></div><span>500+ consultations across India and internationally</span>
+                    </div>
+                    <div class="credential">
+                        <div class="cred-dot"></div><span>Specialised in marriage compatibility and career guidance</span>
+                    </div>
+                    <div style="margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;">
+                        <a href="#booking" class="btn-gold">Book a Session</a>
+                        <a href="https://wa.me/919910791267?text=Hello%20Seema%20ji%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                            class="btn-wa" target="_blank">
+                            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/seemaa_gahlot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            class="btn-insta" target="_blank">
+                            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <div class="max">
+            <div class="tc fade-up">
+                <span class="label">Client Stories & Reviews</span>
+                <h2 class="h2">What People Say</h2>
+                <div class="gold-line c"></div>
+            </div>
+            <div style="height:48px;"></div>
+            <div class="tgrid fade-up d2">
+                <div class="tcard">
+                    <div class="tquote">"</div>
+                    <div class="tstars">★★★★★</div>
+                    <p class="ttext">Vastu Shastra consultation ek amazing experience raha. Ghar ka environment pehle se zyada peaceful aur positive ho gaya
+                    hai.Professional guidance aur simple remedies ne life me noticeable change la diya. Highly recommended!☺️</p>
+                    <div class="tname">Samarth Meena</div>
+                    <div class="tcity">Delhi</div>
+                    <div class="tcity">1 months ago</div>
+                </div>
+                <div class="tcard">
+                    <div class="tquote">"</div>
+                    <div class="tstars">★★★★★</div>
+                    <p class="ttext">I had a wonderful experience with the Vastu consultation service. The guidance provided was clear, practical, and easy
+                    to implement. The consultant demonstrated deep knowledge of traditional Vastu principles and explained how each
+                    recommendation would positively impact energy, harmony, and overall well-being in the space.🙏</p>
+                    <div class="tname">Sunny dahiya</div>
+                    <div class="tcity">Noida</div>
+                    <div class="tcity">1 week ago</div>
+                </div>
+                <div class="tcard">
+                    <div class="tquote">"</div>
+                    <div class="tstars">★★★★★</div>
+                    <p class="ttext">What I appreciated most was that the recommendations were realistic and easy to implement, without requiring major
+                    structural changes. After making the suggested adjustments, I genuinely felt a noticeable improvement in the overall
+                    positivity and harmony of my space❤️❤️❤️.</p>
+                    <div class="tname">Antima Rana</div>
+                    <div class="tcity">Gurgaon</div>
+                    <div class="tcity">3 week ago</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <div class="max">
+            <div class="tc fade-up">
+                <span class="label">Moments & Work</span>
+                <h2 class="h2">Gallery</h2>
+                <div class="gold-line c"></div>
+                <p class="sub">A glimpse into consultations, events, and the sacred practice of Vedic wisdom.</p>
+            </div>
+            <div style="height:48px;"></div>
+            <div class="gallery-grid fade-up d2">
+                <div class="gallery-item">
+                    <img src="g1.jpg" alt="Consultation" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="gallery-placeholder" style="display:none;">🔮</div>
+                    <div class="gallery-overlay"><span></span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="g2.jpg" alt="Vastu Visit" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="gallery-placeholder" style="display:none;">🏠</div>
+                    <div class="gallery-overlay"><span></span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="g3.jpg" alt="Kundli Reading" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="gallery-placeholder" style="display:none;">⭐</div>
+                    <div class="gallery-overlay"><span></span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="g44.jpg" alt="Event" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="gallery-placeholder" style="display:none;">✨</div>
+                    <div class="gallery-overlay"><span></span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery5.jpg" alt="Workshop" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="gallery-placeholder" style="display:none;">📿</div>
+                    <div class="gallery-overlay"><span>Workshop</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery6.jpg" alt="Client Session" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="gallery-placeholder" style="display:none;">🌙</div>
+                    <div class="gallery-overlay"><span>Client Session</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery7.jpg" alt="Vastu Consultation" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="gallery-placeholder" style="display:none;">🪔</div>
+                    <div class="gallery-overlay"><span>Vastu Consultation</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery8.jpg" alt="Astrology Chart" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="gallery-placeholder" style="display:none;">☀️</div>
+                    <div class="gallery-overlay"><span>Chart Analysis</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+        <div class="max">
+            <div class="tc fade-up">
+                <span class="label">Credentials</span>
+                <h2 class="h2">Certifications & Awards</h2>
+                <div class="gold-line c"></div>
+                <p class="sub">Recognised expertise backed by formal training and years of dedicated practice.</p>
+            </div>
+            <div style="height:48px;"></div>
+            <div class="cert-grid fade-up d2">
+                <div class="cert-card">
+                    <img src="cc.jpeg" alt="Certification 1" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-img-placeholder" style="display:none;">🏆</div>
+                    <h4>Certificate of numerology vastu</h4><p>Jyotish Visharad</p><span class="cert-badge">Certified</span>
+                </div>
+                <div class="cert-card">
+                    <img src="cert2.jpg" alt="Certification 2" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-img-placeholder" style="display:none;">📜</div>
+                    <h4>Vastu Shastra</h4><p>Advanced Vastu Expert</p><span class="cert-badge">Certified</span>
+                </div>
+                <div class="cert-card">
+                    <img src="cert3.jpg" alt="Certification 3" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-img-placeholder" style="display:none;">⭐</div>
+                    <h4>Kundli Analysis</h4><p>Birth Chart Specialist</p><span class="cert-badge">Certified</span>
+                </div>
+                <div class="cert-card">
+                    <img src="cert4.jpg" alt="Certification 4" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-img-placeholder" style="display:none;">🌟</div>
+                    <h4>Numerology</h4><p>Numerology Practitioner</p><span class="cert-badge">Certified</span>
+                </div>
+                <div class="cert-card">
+                    <img src="cert5.jpg" alt="Certification 5" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-img-placeholder" style="display:none;">🏅</div>
+                    <h4>Best Astrologer</h4><p>Delhi NCR 2022</p><span class="cert-badge">Award</span>
+                </div>
+                <div class="cert-card">
+                    <img src="cert6.jpg" alt="Certification 6" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-img-placeholder" style="display:none;">✦</div>
+                    <h4>Prashna Kundli</h4><p>Horary Astrology</p><span class="cert-badge">Certified</span>
+                </div>
+                <div class="cert-card">
+                    <img src="cert7.jpg" alt="Certification 7" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-img-placeholder" style="display:none;">🎖️</div>
+                    <h4>Vastu Excellence</h4><p>National Award 2023</p><span class="cert-badge">Award</span>
+                </div>
+                <div class="cert-card">
+                    <img src="cert8.jpg" alt="Certification 8" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-img-placeholder" style="display:none;">📿</div>
+                    <h4>Spiritual Counselling</h4><p>Certified Counsellor</p><span class="cert-badge">Certified</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking">
+        <div class="max">
+            <div class="booking-grid">
+                <div class="fade-up">
+                    <span class="label">Get in Touch</span>
+                    <h2 class="h2">Book Your Consultation</h2>
+                    <div class="gold-line"></div>
+                    <p class="sub" style="max-width:100%;">Choose the way that feels most comfortable for you. Every conversation begins with listening.</p>
+                    <div style="margin-top:36px;">
+                        <div class="booking-info-item">
+                            <div class="booking-icon">✦</div>
+                            <div><h4>Online & In-Person</h4><p>Available Mon–Sat, 10am–6pm IST</p></div>
+                        </div>
+                        <div class="booking-info-item">
+                            <div class="booking-icon">◎</div>
+                            <div><h4>30 & 60 Minute Sessions</h4><p>Tailored to your specific needs</p></div>
+                        </div>
+                        <div class="booking-info-item">
+                            <div class="booking-icon">◈</div>
+                            <div><h4>Confidential & Personal</h4><p>Every session is private and judgment-free</p></div>
+                        </div>
+                        <div class="booking-info-item">
+                            <div class="booking-icon">☎</div>
+                            <div>
+                                <h4>Direct WhatsApp</h4>
+                                <p><a href="https://wa.me/919910791267" target="_blank" style="color:var(--gold);text-decoration:none;">+91 99107 91267</a></p>
+                            </div>
+                        </div>
+                        <div class="booking-info-item">
+                            <div class="booking-icon" style="background:var(--insta-gradient);border:none;font-size:16px;color:#fff;">
+                                <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p><a href="https://www.instagram.com/seemaa_gahlot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="color:var(--gold);text-decoration:none;">@seemaa_gahlot</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fade-up d2">
+                    <div class="booking-tabs">
+                        <button class="btab active" onclick="switchTab('schedule',this)">Schedule</button>
+                        <button class="btab" onclick="switchTab('whatsapp',this)">WhatsApp</button>
+                        <button class="btab" onclick="switchTab('form',this)">Message</button>
+                    </div>
+
+                    <div id="tab-schedule" class="bpanel active">
+                        <div style="background:var(--beige);border:1px solid var(--border);padding:48px 36px;text-align:center;">
+                            <div style="font-size:40px;margin-bottom:20px;">📅</div>
+                            <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:var(--black);margin-bottom:12px;">Schedule Your Appointment</h3>
+                            <p style="font-size:14px;color:var(--muted);font-weight:300;line-height:1.9;margin-bottom:32px;">Click below to open Seema's live booking calendar and pick a date and time that works for you.</p>
+                            <a href="https://seemagahlot.dayschedule.com/consulting" target="_blank" class="btn-gold" style="display:inline-block;">Open Booking Calendar ↗</a>
+                            <p style="font-size:12px;color:var(--muted);margin-top:20px;font-weight:300;">Opens in a new tab · Free to book · Instant confirmation</p>
+                        </div>
+                    </div>
+
+                    <div id="tab-whatsapp" class="bpanel">
+                        <div class="wa-panel-box">
+                            <div style="font-size:48px;margin-bottom:20px;">💬</div>
+                            <p>Prefer a quick conversation? Send a message directly on WhatsApp and Seema will respond personally within a few hours.</p>
+                            <a href="https://wa.me/919910791267?text=Hello%20Seema%20ji%2C%20I%20would%20like%20to%20book%20a%20consultation."
+                                class="btn-wa" target="_blank" style="display:inline-flex;">
+                                <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="tab-form" class="bpanel">
+                        <form onsubmit="submitForm(event)">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="Full name" required />
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="+91 XXXXX XXXXX" required />
+                            </div>
+                            <div class="form-group">
+                                <label>Service</label>
+                                <select>
+                                    <option value="">Select a service</option>
+                                    <option>Astrology Consultation</option>
+                                    <option>Vastu Guidance</option>
+                                    <option>Marriage Compatibility</option>
+                                    <option>Career Guidance</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Message (optional)</label>
+                                <textarea placeholder="Tell me a little about what you are looking for..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-gold" style="width:100%;text-align:center;border:none;cursor:pointer;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="max">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-logo">Seema <span>Gahlot</span></div>
+                    <p class="footer-desc">Vedic Astrologer & Vastu Consultant. Guiding lives with ancient wisdom, one consultation at a time.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/919910791267" class="social-btn" target="_blank" title="WhatsApp">
+                            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:currentColor;">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/seemaa_gahlot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-btn insta" target="_blank" title="Instagram">
+                            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:currentColor;">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-btn" title="Facebook">f</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="#services">Astrology</a>
+                    <a href="#services">Vastu Guidance</a>
+                    <a href="#services">Marriage</a>
+                    <a href="#services">Career</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About Seema</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#testimonials">Reviews</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="https://wa.me/919910791267" target="_blank">+91 99107 91267</a>
+                    <a href="https://www.instagram.com/seemaa_gahlot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+                    <a href="https://seemagahlot.dayschedule.com/consulting" target="_blank">Book Online</a>
+                    <a href="#booking">Send Message</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 <span>Vastudikshaa by Seema Gahlot</span>. All rights reserved.</p>
+                <p>Made by Nujbyte/ Anujojha<span>✦</span> anujojha.dev@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919910791267?text=Hello%20Seema%20ji%2C%20I%20would%20like%20to%20book%20a%20consultation."
+        class="wa-float" target="_blank" aria-label="Chat on WhatsApp">
+        <div class="wa-pulse"></div>
+        <svg viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Instagram Float -->
+    <a href="https://www.instagram.com/seemaa_gahlot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        class="insta-float" target="_blank" aria-label="Follow on Instagram">
+        <svg viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+    </a>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40)
+        })
+
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible') })
+        }, { threshold: 0.12 })
+        document.querySelectorAll('.fade-up').forEach(el => obs.observe(el))
+
+        function switchTab(tab, btn) {
+            document.querySelectorAll('.bpanel').forEach(p => p.classList.remove('active'))
+            document.querySelectorAll('.btab').forEach(t => t.classList.remove('active'))
+            document.getElementById('tab-' + tab).classList.add('active')
+            btn.classList.add('active')
+        }
+
+        function submitForm(e) {
+            e.preventDefault()
+            const btn = e.target.querySelector('button[type="submit"]')
+            btn.textContent = '✓ Message Sent!'
+            btn.style.background = '#2d7a4f'
+            setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; e.target.reset() }, 3000)
+        }
+
+        function toggleMenu() {
+            const m = document.getElementById('mobileMenu')
+            m.style.display = m.style.display === 'flex' ? 'none' : 'flex'
+        }
+        function closeMenu() {
+            document.getElementById('mobileMenu').style.display = 'none'
+        }
+    </script>
+
+</body>
+</html>
